@@ -48,7 +48,7 @@ tile_cost_per_sqft = TILE_MATERIALS[tile_material]
 # Installation preferences
 st.subheader("Installation Preferences")
 installation_preference = st.selectbox("Select Installation Type", list(INSTALLATION_PREFERENCES.keys()))
-installation_additional_cost = INSTALLATION_PREFERENCES |installation_preference]
+installation_additional_cost = INSTALLATION_PREFERENCES[installation_preference]
 
 # Calculate costs
 material_cost = total_area * tile_cost_per_sqft
